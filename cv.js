@@ -1,3 +1,3 @@
 app.controller('cvCtrl', function($scope){
-  $scope.cvMessage
+  $scope.cvMessage = "hello";
 });
