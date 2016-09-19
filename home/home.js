@@ -6,25 +6,28 @@ app.controller('homeCtrl', function($scope){
     name: "McKinsey & Company",
     time: "January 2016 - present",
     position: "Junior Digital Analyst",
-    description: []
+    location: "Bangalore, India",
+    description: ["Developed digital solutions (iOS, Android & Web applications) to enhance data analysis & visualization (AngularJS, React+Redux, ES6, JavaScript, Highcharts.js, Lodash.js)."]
   }, {
     logoHref: "McKinsey_&_Company_logo.png",
     name: "McKinsey & Company",
-    time: "January 2015 - December 2015",
+    time: "January - December 2015",
     position: "Software Developer, Intern",
-    description: []
+    location: "Bangalore, India",
+    description: ["Built web applications following Agile methodology and rapid development."]
   }, {
     logoHref: "trusted.png",
-    name: "Trusted Shares & Invst Ltd",
-    time: "January 2015 - December 2015",
+    name: "Trusted Shares & Investments Ltd",
+    time: "June - July 2013",
     position: "Software Developer, Intern",
-    description: []
+    location: "Mumbai, India",
+    description: ["Developed a suite of software programs in C++ to simulate and optimize the Turtle Trading model by Richard Dennis enabling statistical and heuristic analysis of large amounts of financial data."]
   }];
   $scope.education = [{
     logoHref: "vitlogo.png",
     name: "VIT University",
     time: "July 2011 - May 2015",
-    position: "B. Tech. Information Technology",
-    description: []
+    location: "Vellore, India",
+    position: "B. Tech. Information Technology"
   }];
 });

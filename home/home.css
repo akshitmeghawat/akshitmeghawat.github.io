@@ -24,7 +24,7 @@
 .section {
   padding-top: 35px;
   padding-bottom: 50px;
-  border-top: 2px solid rgba(0,0,0,0.1);
+  border-top: 5px solid rgba(0, 0, 0, 0.1);
 }
 
 .section-heading {
@@ -34,12 +34,6 @@
   text-transform: uppercase;
 }
 
-/*.section-heading::before {*/
-  /*content: "----- ";*/
-/*}*/
-/*.section-heading::after {*/
-  /*content: " -----";*/
-/*}*/
 .who-am-i {
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -54,9 +48,29 @@
   font-size: 20px;
 }
 
-.logo {
+/*item css*/
+.item {
+  margin-top: 30px;
+}
+
+.item-logo {
   width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.item-name {
+  margin-top: 0;
+  color: rgb(102, 119, 136);
+}
+
+.item-position {
+  color: cadetblue;
+  font-family: serif;
+  font-weight: bold;
+}
+
+.item-location {
+  color: peru;
 }
