@@ -12,16 +12,16 @@
   color: black;
 }
 .cv {
-  width: 1024px;
-  max-width: 100vw;
+  width: 100%;
+  max-width: 1024px;
   margin: 30px auto;
   position: relative;
   -webkit-box-shadow: 0 0 32px 0 rgba(0,0,0,0.75);
   -moz-box-shadow: 0 0 32px 0 rgba(0,0,0,0.75);
   box-shadow: 0 0 32px 0 rgba(0,0,0,0.75);
 }
-.name {
-  font-size: 40px;
-  text-align: center;
-  border-bottom: 2px solid black;
-}
+/*.name {*/
+  /*font-size: 40px;*/
+  /*text-align: center;*/
+  /*border-bottom: 2px solid black;*/
+/*}*/
