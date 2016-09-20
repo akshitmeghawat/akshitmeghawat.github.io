@@ -3,10 +3,17 @@ section {
   padding-bottom: 50px;
   border-top: 5px solid rgba(0, 0, 0, 0.1);
 }
+h1, h2, h3, h4, h5, h6 {
+  text-transform: none;
+}
 .row {
   margin-left: 0;
   margin-right: 0;
   display: block;
+}
+
+.intro {
+  padding-top: 200px;
 }
 
 .main-pic {
