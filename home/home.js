@@ -45,7 +45,6 @@ app.controller('homeCtrl', function ($scope) {
   }, {
     name: "Database Systems",
     time: "February-May 2014",
-
     tech: ["WAMP", "MySQL", "PHP", "Javascript"],
     description: ["Developed a hospital management system in WAMP using MySQL database."]
   }, {

@@ -1,3 +1,8 @@
+section {
+  padding-top: 35px;
+  padding-bottom: 50px;
+  border-top: 5px solid rgba(0, 0, 0, 0.1);
+}
 .row {
   margin-left: 0;
   margin-right: 0;
@@ -19,12 +24,6 @@
   font-size: 30px;
   color: white;
   text-align: center;
-}
-
-.section {
-  padding-top: 35px;
-  padding-bottom: 50px;
-  border-top: 5px solid rgba(0, 0, 0, 0.1);
 }
 
 .section-heading {
