@@ -38,7 +38,7 @@
   </div>
   <div class="row item" ng-repeat="item in career">
     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3">
-      <img class="item-logo" src="{{baseImgUrl + item.logoHref}}"/>
+      <img class="item-logo" ng-src="{{baseImgUrl + item.logoHref}}"/>
     </div>
     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0">
       <h3 class="item-name">{{item.name}}</h3>
@@ -59,7 +59,7 @@
   </div>
   <div class="row item" ng-repeat="item in education">
     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3">
-      <img class="item-logo" src="{{baseImgUrl + item.logoHref}}"/>
+      <img class="item-logo" ng-src="{{baseImgUrl + item.logoHref}}"/>
     </div>
     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0">
       <h3 class="item-name">{{item.name}}</h3>
@@ -75,8 +75,31 @@
       Projects
     </div>
   </div>
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0" ng-repeat="item in projects">
+      <!--<div class="project-item">-->
+        <!--<h4>{{item.name}}</h4>-->
+        <!--<h5>{{item.time}}</h5>-->
+        <!--<ul>-->
+          <!--<li ng-repeat="note in item.description">{{note}}</li>-->
+        <!--</ul>-->
+      <!--</div>-->
+      <div class="panel panel-info project-item">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{item.name}}</h3>
+        </div>
+        <div class="panel-body">
+          <h5>{{item.time}}</h5>
+          <span class="label label-primary code" ng-repeat="code in item.tech">{{code}}</span>
+          <ul class="project-description">
+            <li ng-repeat="note in item.description">{{note}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<a href="cv/cv.html">
+<a href="cv/akshit_meghawat.pdf">
   <button class="btn btn-primary">button</button>
 </a>
 </body>

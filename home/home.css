@@ -74,3 +74,27 @@
 .item-location {
   color: peru;
 }
+
+.item ul {
+  margin-left: -15px;
+  margin-top: 10px;
+}
+
+/*project item*/
+.project-item {
+  margin-top: 10px;
+}
+
+.code {
+  margin-top: 7px;
+  margin-right: 10px;
+  font-size: 12px;
+  float: left;
+  padding-top: 0.3em;
+}
+
+.project-description {
+  margin-left: -15px;
+  margin-top: 10px;
+  display: inline-block;
+}

@@ -1,4 +1,4 @@
-app.controller('homeCtrl', function($scope){
+app.controller('homeCtrl', function ($scope) {
   $scope.whoAmI = ["A software developer", "An athlete", "An adventurous traveller"];
   $scope.baseImgUrl = "home/images/";
   $scope.career = [{
@@ -29,5 +29,29 @@ app.controller('homeCtrl', function($scope){
     time: "July 2011 - May 2015",
     location: "Vellore, India",
     position: "B. Tech. Information Technology"
+  }];
+  $scope.projects = [{
+    name: "Udacity Machine Learning",
+    time: "August 2015",
+    tech: ["python", "numpy", "pandas", "scikit-learn"],
+    description: [
+      "Use machine learning algorithms to identify Enron Employees who may have committed fraud based on the public Enron financial and email dataset.",
+    ]
+  }, {
+    name: "Operations Research",
+    time: "July-September 2014",
+    tech: ["Linear Programming", "C++"],
+    description: ["Developed a city traffic analyser using PERT analysis and Linear Programming (C++)."]
+  }, {
+    name: "Database Systems",
+    time: "February-May 2014",
+
+    tech: ["WAMP", "MySQL", "PHP", "Javascript"],
+    description: ["Developed a hospital management system in WAMP using MySQL database."]
+  }, {
+    name: "Object Oriented Analysis & Design",
+    time: "February-April 2013",
+    tech: ["C++", "Rational Rose"],
+    description: ["Developed an inventory management software in C++ with the help of ‘Rational Rose’."]
   }];
 });
