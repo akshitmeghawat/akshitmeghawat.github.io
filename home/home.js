@@ -1,6 +1,9 @@
 app.controller('homeCtrl', function ($scope) {
+
   $scope.whoAmI = ["A software developer", "An athlete", "An adventurous traveller"];
+
   $scope.baseImgUrl = "home/images/";
+
   $scope.career = [{
     logoHref: "McKinsey_&_Company_logo.png",
     name: "McKinsey & Company",
@@ -23,6 +26,7 @@ app.controller('homeCtrl', function ($scope) {
     location: "Mumbai, India",
     description: ["Developed a suite of software programs in C++ to simulate and optimize the Turtle Trading model by Richard Dennis enabling statistical and heuristic analysis of large amounts of financial data."]
   }];
+
   $scope.education = [{
     logoHref: "vitlogo.png",
     name: "VIT University",
@@ -30,6 +34,7 @@ app.controller('homeCtrl', function ($scope) {
     location: "Vellore, India",
     position: "B. Tech. Information Technology"
   }];
+
   $scope.projects = [{
     name: "Udacity Machine Learning",
     time: "August 2015",
@@ -52,5 +57,29 @@ app.controller('homeCtrl', function ($scope) {
     time: "February-April 2013",
     tech: ["C++", "Rational Rose"],
     description: ["Developed an inventory management software in C++ with the help of ‘Rational Rose’."]
+  }];
+
+  $scope.baseCertificateUrl = "home/certificates/";
+  $scope.skills_certificates = [{
+    discipline: "Data Science",
+    tech: ["Machine Learning", "R", "python", "numpy", "pandas", "scikit-learn", "matlab"],
+    certificates: [{
+      certificate: "Coursera_N9DARAZY5X66.pdf",
+      description: "Machine Learning by Andrew Ng (Stanford University) on Coursera. November, 2015."
+    }, {
+      certificate: "Coursera_ZU9GMJZVGX2W.pdf",
+      description: "R Programming by John Hopkins University on Coursera."
+    }]
+  }, {
+    discipline: "Web Development",
+    tech: ["AngularJS", "React+Redux", "JavaScript", "HTML", "CSS", "PHP", "SQL", "Highcharts.js", "Lodash.js"],
+    certificates: []
+  }, {
+    discipline: "General Computer Science",
+    tech: ["C", "C++", "Java", "python", "Agile Software Development", "Test Driven Development"],
+    certificates: [{
+      certificate: "udacity_certificate.pdf",
+      description: "Learn key concepts of computer science and build a search engine using python."
+    }]
   }];
 });
