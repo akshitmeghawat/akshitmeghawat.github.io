@@ -106,3 +106,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 10px;
   display: inline-block;
 }
+
+#my-passion img {
+  width: 100%;
+}
+
+#my-passion button {
+  width: 100%;
+  margin-top: 15px;
+}

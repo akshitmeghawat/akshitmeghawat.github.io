@@ -11,21 +11,21 @@ app.controller('homeCtrl', function ($scope) {
   $scope.baseImgUrl = "home/images/";
 
   $scope.career = [{
-    logoHref: "McKinsey_&_Company_logo.png",
+    logoHref: "logos/McKinsey_&_Company_logo.png",
     name: "McKinsey & Company",
     time: "January 2016 - present",
     position: "Junior Digital Analyst",
     location: "Bangalore, India",
     description: ["Developed digital solutions (iOS, Android & Web applications) to enhance data analysis & visualization (AngularJS, React+Redux, ES6, JavaScript, Highcharts.js, Lodash.js)."]
   }, {
-    logoHref: "McKinsey_&_Company_logo.png",
+    logoHref: "logos/McKinsey_&_Company_logo.png",
     name: "McKinsey & Company",
     time: "January - December 2015",
     position: "Software Developer, Intern",
     location: "Bangalore, India",
     description: ["Built web applications following Agile methodology and rapid development."]
   }, {
-    logoHref: "trusted.png",
+    logoHref: "logos/trusted.png",
     name: "Trusted Shares & Investments Ltd",
     time: "June - July 2013",
     position: "Software Developer, Intern",
@@ -34,7 +34,7 @@ app.controller('homeCtrl', function ($scope) {
   }];
 
   $scope.education = [{
-    logoHref: "vitlogo.png",
+    logoHref: "logos/vitlogo.png",
     name: "VIT University",
     time: "July 2011 - May 2015",
     location: "Vellore, India",
@@ -89,10 +89,13 @@ app.controller('homeCtrl', function ($scope) {
     }]
   }];
 
-  $scope.passion = [
-    "An all-rounded athlete: Football, Cricket, Badminton, Table Tennis, Endurance Running, Swimming, Cycling, Basketball, Volleyball, Field Hockey, Handball, Rock Climbing",
-    "An adventurous explorer. Wants to be a globetrotter."
-  ];
+  $scope.passion = [{
+    title: "An all-rounded athlete",
+    note:"Football, Cricket, Badminton, Table Tennis, Endurance Running, Swimming, Cycling, Basketball, Volleyball, Field Hockey, Handball"
+  }, {
+    title: "An adventurous explorer",
+    note: "Wants to be a globetrotter."
+  }];
 
   $scope.photos = [{
     link: "travelling/P4040340.JPG",

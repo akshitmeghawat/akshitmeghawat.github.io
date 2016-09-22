@@ -148,8 +148,10 @@
         <div class="panel-body">
           <span class="label label-primary code" ng-repeat="code in item.tech">{{code}}</span>
           <ul class="project-description">
-            <li ng-repeat="note in item.certificates">{{note.description}} <a
-              ng-href="{{baseCertificateUrl + note.certificate}}">View Certificate</a></li>
+            <li ng-repeat="note in item.certificates">
+              {{note.description}}
+              <a ng-href="{{baseCertificateUrl + note.certificate}}">View Certificate</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -162,13 +164,26 @@
     <div class="section-heading">My Passion: Sports, Travelling</div>
   </div>
   <div class="row">
-    <div class="row">
-      <div class="who-am-i-items col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-        <div ng-repeat="item in passion" style="margin-top: 10px;">{{item}}</div>
-      </div>
+    <div class="who-am-i-items col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+      <div ng-repeat="item in passion" style="margin-top: 10px;"><b>{{item.title}}</b>: {{item.note}}</div>
     </div>
   </div>
-  <button data-target="#gallery-modal" data-toggle="modal">View Gallery</button>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-0 col-md-2 col-md-offset-4">
+      <img src="home/images/travelling/DSC_0590.JPG"/>
+    </div>
+    <div class="col-sm-6 col-md-2">
+      <img src="home/images/travelling/IMG_20141215_142307.jpg"/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5">
+      <button data-target="#gallery-modal" data-toggle="modal" class="btn btn-default">
+        View Gallery
+        <i class="fa fa-external-link" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
 </section>
 
 <!-- Modal -->
