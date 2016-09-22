@@ -115,3 +115,16 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   margin-top: 15px;
 }
+
+#contact img {
+  width: 80%;
+  max-width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.nav>li>a {
+  padding-left: 9px;
+  padding-right: 9px;
+}
