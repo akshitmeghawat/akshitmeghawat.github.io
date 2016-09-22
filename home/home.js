@@ -1,6 +1,12 @@
 app.controller('homeCtrl', function ($scope) {
 
-  $scope.whoAmI = ["A software developer", "An athlete", "An adventurous traveller"];
+  var updateScope = function() {
+    if (!$scope.$$phase) {
+      $scope.$apply();
+    }
+  };
+
+  $scope.whoAmI = ["A software developer", "An all-rounded athlete", "An adventurous traveller"];
 
   $scope.baseImgUrl = "home/images/";
 
@@ -82,4 +88,52 @@ app.controller('homeCtrl', function ($scope) {
       description: "Learn key concepts of computer science and build a search engine using python."
     }]
   }];
+
+  $scope.passion = [
+    "An all-rounded athlete: Football, Cricket, Badminton, Table Tennis, Endurance Running, Swimming, Cycling, Basketball, Volleyball, Field Hockey, Handball, Rock Climbing",
+    "An adventurous explorer. Wants to be a globetrotter."
+  ];
+
+  $scope.photos = [{
+    link: "travelling/P4040340.JPG",
+    description: "Dead Sea, Jordan"
+  }, {
+    link: "travelling/IMG_20141215_142307.jpg",
+    description: "Frogner Park, Oslo, Norway"
+  }, {
+    link: "travelling/DSC_0590.JPG",
+    description: "Colline Du Chateau, Nice, France"
+  }, {
+    link: "travelling/DSC_0121.JPG",
+    description: "Musée Rodin, Paris, France"
+  }, {
+    link: "travelling/US 398 us.JPG",
+    description: "Universal Studio, Los Angeles, USA"
+  }, {
+    link: "travelling/US 086 gg.JPG",
+    description: "Golden Gate Bridge, San Francisco, USA"
+  }];
+  $scope.numberOfPhotos = $scope.photos.length;
+  $scope.activePhoto = 0;
+
+  //var updateImageHeight = function () {
+  //  var elem = angular.element('#gallery-image');
+  //  console.log(elem);
+  //  console.log(elem[0]);
+  //  var lh = angular.element('.image-wrapper').css('height');
+  //  console.log($('.image-wrapper').height());
+  //  //elem.css('margin-top', (lh-sh)/2 + 'px');
+  //};
+
+  $scope.showNext = function () {
+    $scope.activePhoto = ($scope.activePhoto + 1)%$scope.numberOfPhotos;
+    //updateImageHeight();
+    //updateScope();
+  };
+  $scope.showPrev = function () {
+    var num = $scope.activePhoto - 1;
+    $scope.activePhoto = num === -1? $scope.numberOfPhotos - 1 : num;
+    //updateImageHeight();
+    //updateScope();
+  };
 });
