@@ -110,10 +110,10 @@ app.controller('homeCtrl', function ($scope) {
     link: "travelling/DSC_0121.JPG",
     description: "Musée Rodin, Paris, France"
   }, {
-    link: "travelling/US 398 us.JPG",
+    link: "travelling/US_398_us.JPG",
     description: "Universal Studio, Los Angeles, USA"
   }, {
-    link: "travelling/US 086 gg.JPG",
+    link: "travelling/US_086_gg.JPG",
     description: "Golden Gate Bridge, San Francisco, USA"
   }];
   $scope.numberOfPhotos = $scope.photos.length;
