@@ -8,31 +8,63 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none;
 }
 
+.navbar-custom .navbar-brand {
+  font-size: 1.7em;
+}
+
+.nav > li > a {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
 .row {
   margin-left: 0;
   margin-right: 0;
   display: block;
 }
 
-.intro {
-  padding-top: 200px;
+.main-pic {
+  width: 100%;
+  position: relative;
+  height: 309px;
+  margin-top: 50px;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
-.main-pic {
-  position: relative;
+@media (min-width: 768px) {
+  .main-pic {
+    margin-top: 100px;
+  }
+}
+
+.intro-wrapper {
+  height: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-pic img {
-  width: 100%;
+  height: 100%;
+  float: left;
 }
 
-.main-pic span {
+.hi {
+  left: 0;
   position: absolute;
-  top: 100px;
-  right: 20%;
+  top: 245px;
+  width: 100%;
   font-size: 30px;
   color: white;
   text-align: center;
+  font-family: cursive;
+}
+
+@media (min-width: 768px) {
+  .hi {
+    top: 295px;
+  }
 }
 
 .section-heading {
@@ -122,9 +154,4 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
   margin-right: auto;
   display: block;
-}
-
-.nav>li>a {
-  padding-left: 9px;
-  padding-right: 9px;
 }

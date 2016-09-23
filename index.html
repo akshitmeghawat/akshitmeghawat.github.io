@@ -60,14 +60,19 @@
   <!-- /.container-fluid -->
 </nav>
 
-<section id="intro">
-  <div class="row">
-    <div class="col-sm-12 main-pic">
-      <!--<img src="home/images/P4020010.JPG">-->
-      <!--<span>Hi, I'm<br/>Akshit Meghawat</span>-->
+<div class="row" style="position: relative">
+  <div class="main-pic">
+    <div class="intro-wrapper">
+      <img src="home/images/intro/P4020010.JPG"/>
+      <img src="home/images/intro/football.jpg"/>
+      <img src="home/images/intro/cricket.jpg"/>
+      <img src="home/images/intro/oslo_opera_house.jpg"/>
     </div>
   </div>
-</section>
+  <div class="hi">
+    Hi, I'm<br/>Akshit Meghawat
+  </div>
+</div>
 
 <section class="who-am-i">
   <div class="row">
@@ -197,22 +202,22 @@
     <div class="section-heading">Lets Connect</div>
   </div>
   <div class="row" style="margin-top: 30px">
-    <div class="col-md-1 col-md-offset-4 col-xs-3 col-sm-offset-0">
+    <div class="col-md-1 col-md-offset-4 col-xs-3 col-xs-offset-0 col-sm-3 col-sm-offset-0">
       <a href="https://in.linkedin.com/in/akshit-meghawat-30154182">
         <img src="home/images/logos/linkedin.png"/>
       </a>
     </div>
-    <div class="col-md-1 col-xs-3">
+    <div class="col-md-1 col-xs-3 col-sm-3">
       <a href="mailto:meghawat.akshit@gmail.com">
         <img src="home/images/logos/mail.png"/>
       </a>
     </div>
-    <div class="col-md-1 col-xs-3">
+    <div class="col-md-1 col-xs-3 col-sm-3">
       <a href="https://www.facebook.com/akshit.meghawat">
         <img src="home/images/logos/fb.png"/>
       </a>
     </div>
-    <div class="col-md-1 col-xs-3">
+    <div class="col-md-1 col-xs-3 col-sm-3">
       <a href="https://github.com/akshitmeghawat">
         <img src="home/images/logos/github.png"/>
       </a>
@@ -232,6 +237,7 @@
       </div>
       <div class="modal-body">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" ng-click="showPrev()"></span>
+
         <div class="image-wrapper">
           <img ng-src="{{baseImgUrl + photos[activePhoto].link}}" id="gallery-image">
         </div>
