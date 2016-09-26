@@ -8,8 +8,10 @@
   <link rel="stylesheet" href="libraries/bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="libraries/freelancer/css/freelancer.css">
   <link rel="stylesheet" type="text/css" href="libraries/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="libraries/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="libraries/slick/slick-theme.css"/>
   <link rel="stylesheet" href="home/home.css">
-  <link rel="stylesheet" href="home/modal.css">
+  <link rel="stylesheet" href="home/gallery-slider.css">
 
 </head>
 
@@ -189,7 +191,7 @@
   </div>
   <div class="row">
     <div class="col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5">
-      <button data-target="#gallery-modal" data-toggle="modal" class="btn btn-default">
+      <button data-target="#gallery-modal-slick" data-toggle="modal" class="btn btn-default">
         View Gallery
         <i class="fa fa-external-link" aria-hidden="true"></i>
       </button>
@@ -225,8 +227,8 @@
   </div>
 </section>
 
-<!-- Modal -->
-<div id="gallery-modal" class="modal fade" role="dialog">
+<!-- Modal Slick-->
+<div id="gallery-modal-slick" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
@@ -236,18 +238,12 @@
         <h4 class="modal-title">Gallery</h4>
       </div>
       <div class="modal-body">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" ng-click="showPrev()"></span>
-
-        <div class="image-wrapper">
-          <img ng-src="{{baseImgUrl + photos[activePhoto].link}}" id="gallery-image">
+        <div id="slider-slick">
+          <div ng-repeat="photo in photos">
+            <img ng-src="{{baseImgUrl + photo.link}}"/>
+            <p>{{photo.description}}</p>
+          </div>
         </div>
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ng-click="showNext()"></span>
-      </div>
-      <div class="modal-footer">
-        <div class="description">{{photos[activePhoto].description}}</div>
-        <ol class="indicators">
-          <li ng-repeat="i in [0,1,2,3,4,5]" ng-class="{'active': $index === activePhoto}"></li>
-        </ol>
       </div>
     </div>
 
@@ -258,6 +254,7 @@
 <script src="libraries/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="libraries/jquery.easing.min.js"></script>
 <script src="libraries/freelancer/js/freelancer.min.js"></script>
+<script type="text/javascript" src="libraries/slick/slick.min.js"></script>
 <script src="libraries/angular.min.js"></script>
 
 <script src="index.js"></script>

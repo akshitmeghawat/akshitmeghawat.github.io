@@ -1,6 +1,6 @@
 app.controller('homeCtrl', function ($scope) {
 
-  var updateScope = function() {
+  var updateScope = function () {
     if (!$scope.$$phase) {
       $scope.$apply();
     }
@@ -91,7 +91,7 @@ app.controller('homeCtrl', function ($scope) {
 
   $scope.passion = [{
     title: "An all-rounded athlete",
-    note:"Football, Cricket, Badminton, Table Tennis, Endurance Running, Swimming, Cycling, Basketball, Volleyball, Field Hockey, Handball"
+    note: "Football, Cricket, Badminton, Table Tennis, Endurance Running, Swimming, Cycling, Basketball, Volleyball, Field Hockey, Handball"
   }, {
     title: "An adventurous explorer",
     note: "Wants to be a globetrotter."
@@ -116,27 +116,12 @@ app.controller('homeCtrl', function ($scope) {
     link: "travelling/US_086_gg.JPG",
     description: "Golden Gate Bridge, San Francisco, USA"
   }];
-  $scope.numberOfPhotos = $scope.photos.length;
-  $scope.activePhoto = 0;
 
-  //var updateImageHeight = function () {
-  //  var elem = angular.element('#gallery-image');
-  //  console.log(elem);
-  //  console.log(elem[0]);
-  //  var lh = angular.element('.image-wrapper').css('height');
-  //  console.log($('.image-wrapper').height());
-  //  //elem.css('margin-top', (lh-sh)/2 + 'px');
-  //};
 
-  $scope.showNext = function () {
-    $scope.activePhoto = ($scope.activePhoto + 1)%$scope.numberOfPhotos;
-    //updateImageHeight();
-    //updateScope();
-  };
-  $scope.showPrev = function () {
-    var num = $scope.activePhoto - 1;
-    $scope.activePhoto = num === -1? $scope.numberOfPhotos - 1 : num;
-    //updateImageHeight();
-    //updateScope();
-  };
+  $(document).ready(function () {
+    $("#slider-slick").slick({
+      dots: true,
+      fade: true
+    });
+  });
 });
