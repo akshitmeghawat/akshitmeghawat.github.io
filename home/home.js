@@ -54,10 +54,13 @@ app.controller('homeCtrl', function ($scope) {
     tech: ["Linear Programming", "C++"],
     description: ["Developed a city traffic analyser using PERT analysis and Linear Programming (C++)."]
   }, {
-    name: "Database Systems",
+    name: "Hospital Management System",
     time: "February-May 2014",
-    tech: ["WAMP", "MySQL", "PHP", "Javascript"],
-    description: ["Developed a hospital management system in WAMP using MySQL database."]
+    tech: ["WAMP", "MySQL", "PHP", "Javascript", "Machine Learning", "R"],
+    description: [
+      "Developed a hospital management system in WAMP using MySQL database.",
+      "Used machine learning to predict best hospital for a disease"
+    ]
   }, {
     name: "Object Oriented Analysis & Design",
     time: "February-April 2013",
