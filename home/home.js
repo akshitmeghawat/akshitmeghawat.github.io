@@ -16,14 +16,14 @@ app.controller('homeCtrl', function ($scope) {
     time: "January 2016 - present",
     position: "Junior Digital Analyst",
     location: "Bangalore, India",
-    description: ["Developed digital solutions (iOS, Android & Web applications) to enhance data analysis & visualization (AngularJS, React+Redux, ES6, JavaScript, Highcharts.js, Lodash.js)."]
+    description: ["Developed digital solutions to enhance data analysis & visualization (python, numpy, pandas, AngularJS, React-Redux)."]
   }, {
     logoHref: "logos/McKinsey_&_Company_logo.png",
     name: "McKinsey & Company",
     time: "January - December 2015",
     position: "Software Developer, Intern",
     location: "Bangalore, India",
-    description: ["Built web applications following Agile methodology and rapid development."]
+    description: ["Built web applications using Agile methodology and Test Driven Development."]
   }, {
     logoHref: "logos/trusted.png",
     name: "Trusted Shares & Investments Ltd",
@@ -58,8 +58,8 @@ app.controller('homeCtrl', function ($scope) {
     time: "July-October 2014",
     tech: ["WAMP", "MySQL", "PHP", "Javascript", "Machine Learning", "R"],
     description: [
-      "Developed a hospital management system in WAMP using MySQL database.",
-      "Used machine learning to predict best hospital for a disease"
+      "Performed logistic regression to predict whether a particular hospital is ideal to visit for a patient having a specific disease.",
+      "Developed the system in WAMP using MySQL database."
     ]
   }, {
     name: "Object Oriented Analysis & Design",
