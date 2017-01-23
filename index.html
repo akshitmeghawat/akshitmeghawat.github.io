@@ -185,19 +185,12 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-6 col-sm-offset-0 col-md-2 col-md-offset-4">
-      <img src="home/images/travelling/DSC_0590.JPG"/>
-    </div>
-    <div class="col-sm-6 col-md-2">
-      <img src="home/images/travelling/IMG_20141215_142307.jpg"/>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5">
-      <button data-target="#gallery-modal-slick" data-toggle="modal" class="btn btn-default">
-        View Gallery
-        <i class="fa fa-external-link" aria-hidden="true"></i>
-      </button>
+    <div id="slider-slick">
+      <div ng-repeat="photo in photos">
+        <img ng-src="{{baseImgUrl + photo.link}}"/>
+
+        <p>{{photo.description}}</p>
+      </div>
     </div>
   </div>
 </section>
@@ -223,35 +216,12 @@
       </a>
     </div>
     <!--<div class="col-md-1 col-xs-3 col-sm-3">-->
-      <!--<a href="https://github.com/akshitmeghawat">-->
-        <!--<img src="home/images/logos/github.png"/>-->
-      <!--</a>-->
+    <!--<a href="https://github.com/akshitmeghawat">-->
+    <!--<img src="home/images/logos/github.png"/>-->
+    <!--</a>-->
     <!--</div>-->
   </div>
 </section>
-
-<!-- Modal Slick-->
-<div id="gallery-modal-slick" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Gallery</h4>
-      </div>
-      <div class="modal-body">
-        <div id="slider-slick">
-          <div ng-repeat="photo in photos">
-            <img ng-src="{{baseImgUrl + photo.link}}"/>
-            <p>{{photo.description}}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
 
 <script src="libraries/jquery.min.js"></script>
 <script src="libraries/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>

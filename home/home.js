@@ -101,11 +101,11 @@ app.controller('homeCtrl', function ($scope) {
   }];
 
   $scope.photos = [{
-    link: "travelling/P4040340.JPG",
-    description: "Dead Sea, Jordan"
-  }, {
     link: "travelling/IMG_20141215_142307.jpg",
     description: "Frogner Park, Oslo, Norway"
+  }, {
+    link: "travelling/P4040340.JPG",
+    description: "Dead Sea, Jordan"
   }, {
     link: "travelling/DSC_0590.JPG",
     description: "Colline Du Chateau, Nice, France"
@@ -123,8 +123,7 @@ app.controller('homeCtrl', function ($scope) {
 
   $(document).ready(function () {
     $("#slider-slick").slick({
-      dots: true,
-      fade: true
+      dots: true
     });
   });
 });
