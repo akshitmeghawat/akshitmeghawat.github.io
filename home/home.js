@@ -16,7 +16,7 @@ app.controller('homeCtrl', function ($scope) {
     time: "January 2016 - present",
     position: "Junior Digital Analyst",
     location: "Bangalore, India",
-    description: ["Developed digital solutions to enhance data analysis & visualization (python, numpy, pandas, AngularJS, React-Redux)."]
+    description: ["Developed digital solutions to enhance data analysis & visualization (python, numpy, pandas, scikit-learn, AngularJS, React-Redux)."]
   }, {
     logoHref: "logos/McKinsey_&_Company_logo.png",
     name: "McKinsey & Company",
@@ -71,7 +71,7 @@ app.controller('homeCtrl', function ($scope) {
   $scope.baseCertificateUrl = "home/certificates/";
   $scope.skills_certificates = [{
     discipline: "Data Science",
-    tech: ["Machine Learning", "R", "python", "numpy", "pandas", "scikit-learn", "matlab"],
+    tech: ["Machine Learning", "python", "numpy", "pandas", "scikit-learn", "R", "matlab"],
     certificates: [{
       certificate: "Coursera_N9DARAZY5X66.pdf",
       description: "Machine Learning by Andrew Ng (Stanford University) on Coursera. November, 2015."
