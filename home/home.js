@@ -13,7 +13,7 @@ app.controller('homeCtrl', function ($scope) {
   $scope.career = [{
     logoHref: "logos/McKinsey_&_Company_logo.png",
     name: "McKinsey & Company",
-    time: "January 2016 - present",
+    time: "January 2016 - April 2017”,
     position: "Junior Digital Analyst",
     location: "Bangalore, India",
     description: ["Developed digital solutions to enhance data analysis & visualization (python, numpy, pandas, scikit-learn, AngularJS, React-Redux)."]
