@@ -16,12 +16,12 @@ app.controller('homeCtrl', function ($scope) {
     time: "January 2016 - April 2017",
     position: "Junior Digital Analyst",
     location: "Bangalore, India",
-    description: ["Developed digital solutions to enhance data analysis & visualization (python, numpy, pandas, scikit-learn, AngularJS, React-Redux)."]
+    description: ["Developed digital solutions to enhance data analysis & visualization (AngularJS, React-Redux, Highcharts.js, Node.js)."]
   }, {
     logoHref: "logos/McKinsey_&_Company_logo.png",
     name: "McKinsey & Company",
     time: "January - December 2015",
-    position: "Software Developer, Intern",
+    position: "Technical Intern",
     location: "Bangalore, India",
     description: ["Built web applications using Agile methodology and Test Driven Development."]
   }, {
@@ -34,6 +34,12 @@ app.controller('homeCtrl', function ($scope) {
   }];
 
   $scope.education = [{
+    logoHref: "logos/ncsulogo.png",
+    name: "North Carolina State University",
+    time: "August 2017 - present",
+    location: "Raleigh, NC",
+    position: "Master of Computer Science"
+  }, {
     logoHref: "logos/vitlogo.png",
     name: "VIT University",
     time: "July 2011 - May 2015",
@@ -44,15 +50,15 @@ app.controller('homeCtrl', function ($scope) {
   $scope.projects = [{
     name: "Udacity Machine Learning",
     time: "August 2015",
-    tech: ["python", "numpy", "pandas", "scikit-learn"],
+    tech: ["python", "numpy", "pandas", "scikit-learn", "matplotlib"],
     description: [
       "Use machine learning algorithms to identify Enron Employees who may have committed fraud based on the public Enron financial and email dataset.",
     ]
   }, {
     name: "Operations Research",
     time: "July-September 2014",
-    tech: ["Linear Programming", "C++"],
-    description: ["Developed a city traffic analyser using PERT analysis and Linear Programming (C++)."]
+    tech: ["PERT-CPM", "C++"],
+    description: ["Developed a project management software by implementing PERT-CPM technique in C++."]
   }, {
     name: "Hospital Management System",
     time: "July-October 2014",
@@ -81,7 +87,7 @@ app.controller('homeCtrl', function ($scope) {
     }]
   }, {
     discipline: "Web Development",
-    tech: ["AngularJS", "React+Redux", "JavaScript", "HTML", "CSS", "PHP", "SQL", "Highcharts.js", "Lodash.js"],
+    tech: ["AngularJS", "React+Redux", "JavaScript", "Node.js", "HTML", "CSS", "PHP", "SQL", "Highcharts.js", "Lodash.js"],
     certificates: []
   }, {
     discipline: "General Computer Science",
