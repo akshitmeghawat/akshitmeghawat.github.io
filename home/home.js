@@ -77,7 +77,7 @@ app.controller('homeCtrl', function ($scope) {
   $scope.baseCertificateUrl = "home/certificates/";
   $scope.skills_certificates = [{
     discipline: "Data Science",
-    tech: ["Machine Learning", "python", "numpy", "pandas", "scikit-learn", "R", "matlab"],
+    tech: ["Machine Learning", "python", "numpy", "pandas", "scikit-learn", "matplotlib", "R", "matlab"],
     certificates: [{
       certificate: "Coursera_N9DARAZY5X66.pdf",
       description: "Machine Learning by Andrew Ng (Stanford University) on Coursera. November, 2015."
@@ -91,7 +91,7 @@ app.controller('homeCtrl', function ($scope) {
     certificates: []
   }, {
     discipline: "General Computer Science",
-    tech: ["C", "C++", "Java", "python", "Agile Software Development", "Test Driven Development"],
+    tech: ["C", "C++", "Java", "python", "Agile Software Development", "Test Driven Development", "Git"],
     certificates: [{
       certificate: "udacity_certificate.pdf",
       description: "Learn key concepts of computer science and build a search engine using python."
