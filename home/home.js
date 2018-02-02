@@ -16,7 +16,13 @@ app.controller('homeCtrl', function ($scope) {
     time: "January 2016 - April 2017",
     position: "Junior Digital Analyst",
     location: "Bangalore, India",
-    description: ["Developed digital solutions to enhance data analysis & visualization (AngularJS, React-Redux, Highcharts.js, Node.js)."]
+    description: [
+      "Developed data-driven analysis & visualization tools for 10+ clients/companies from wide range of industries (insurance, pharmaceutical, shipping, government etc.). (AngularJS, Node.js, Highcharts.js)",
+      "Built an event/initiative tracking software for organizations to systematize data collection and management. It helped in prioritization of resource allocation, scheduling and cost control. Also helped in measuring KPIs for impact assessment and future planning. The software is used by >5 government organizations and >10 NGOs in Africa.",
+      "Handled unstructured data in partnership proposals for a shipping company for better route design and delivery.",
+      "Streamlined the recruitment process for a Cruise Line Agency. Created an interface which enabled recruiters to compare and review multiple applicants’ skills with minimal effort. Reduced recruitment process cycle from 2 weeks to 4 days.",
+      "Developed an end-to-end solution for an insurance firm to auto-consolidate data from various international data sources (OECD, World Bank etc.) and provide macro-level analysis."
+    ]
   }, {
     logoHref: "logos/McKinsey_&_Company_logo.png",
     name: "McKinsey & Company",
@@ -48,17 +54,24 @@ app.controller('homeCtrl', function ($scope) {
   }];
 
   $scope.projects = [{
-    name: "Udacity Machine Learning",
-    time: "August 2015",
-    tech: ["python", "numpy", "pandas", "scikit-learn", "matplotlib"],
+    name: "Spatial and Temporal Data Mining",
+    time: "January 2018 - present",
+    tech: ["python"],
     description: [
-      "Use machine learning algorithms to identify Enron Employees who may have committed fraud based on the public Enron financial and email dataset.",
+      "Implementing CNN on high-resolution satellite images to estimate economic indicators of nations. Extending research done by http://sustain.stanford.edu/predicting-poverty.",
     ]
+  // },{
+  //   name: "Udacity Machine Learning",
+  //   time: "August 2015",
+  //   tech: ["python", "numpy", "pandas", "scikit-learn", "matplotlib"],
+  //   description: [
+  //     "Use machine learning algorithms to identify Enron Employees who may have committed fraud based on the public Enron financial and email dataset.",
+  //   ]
   }, {
     name: "Operations Research",
     time: "July-September 2014",
     tech: ["PERT-CPM", "C++"],
-    description: ["Developed a project management software by implementing PERT-CPM technique in C++."]
+    description: ["Implemented PERT-CPM for project management enabling prediction of risk factors and critical path requirements for software product goals."]
   }, {
     name: "Hospital Management System",
     time: "July-October 2014",
