@@ -43,8 +43,8 @@ app.controller('homeCtrl', function ($scope) {
     logoHref: "logos/ncsulogo.png",
     name: "North Carolina State University",
     time: "August 2017 - present",
-    location: "Raleigh, NC",
-    position: "Master of Computer Science"
+    location: "Raleigh, NC, USA",
+    position: "Master of Computer Science: Data Science track"
   }, {
     logoHref: "logos/vitlogo.png",
     name: "VIT University",
@@ -55,18 +55,29 @@ app.controller('homeCtrl', function ($scope) {
 
   $scope.projects = [{
     name: "Spatial and Temporal Data Mining",
-    time: "January 2018 - present",
-    tech: ["python"],
+    time: "January - April 2018",
+    tech: ["python", "tensorflow", "keras", "caffe", "R"],
     description: [
-      "Implementing CNN on high-resolution satellite images to estimate economic indicators of nations. Extending research done by http://sustain.stanford.edu/predicting-poverty.",
+      "Implemented Convolutional Neural Network and transfer learning on satellite images to estimate economic indicators of nations.",
+      "Trained a CNN model on satellite images downloaded from Google Static Map API to predict night-time light intensity of specific countries in Africa",
+      "Also fine-tuned a pre-trained caffe model working on ImageNet dataset to predict poverty (Explored research done by http://sustain.stanford.edu/predicting-poverty)."
     ]
-  // },{
-  //   name: "Udacity Machine Learning",
-  //   time: "August 2015",
-  //   tech: ["python", "numpy", "pandas", "scikit-learn", "matplotlib"],
-  //   description: [
-  //     "Use machine learning algorithms to identify Enron Employees who may have committed fraud based on the public Enron financial and email dataset.",
-  //   ]
+    // },{
+    //   name: "Udacity Machine Learning",
+    //   time: "August 2015",
+    //   tech: ["python", "numpy", "pandas", "scikit-learn", "matplotlib"],
+    //   description: [
+    //     "Use machine learning algorithms to identify Enron Employees who may have committed fraud based on the public Enron financial and email dataset.",
+    //   ]
+  }, {
+    name: "Data Driven Decision Making",
+    time: "August - November 2017",
+    tech: ["python", "nltk"],
+    description: [
+      "Built an application (assistant) for swimming pool owners for hassle-free pool usage and maintenance.",
+      "Collected data from LexisNexis universal database and online surveys. Performed text analysis (word tokenization, frequency analysis, stopwords removal etc.) on the data to identify key areas of improvement and the most important concerns/complaints for swimming pool owners.",
+      "Performed calculations on swimming pool data (pH level, chemical cost etc.) and weather data to provide optimal decisions for pool usage and maintenance."
+    ]
   }, {
     name: "Operations Research",
     time: "July-September 2014",
@@ -84,13 +95,13 @@ app.controller('homeCtrl', function ($scope) {
     name: "Object Oriented Analysis & Design",
     time: "February-April 2013",
     tech: ["C++", "Rational Rose"],
-    description: ["Developed an inventory management software in C++ with the help of ‘Rational Rose’."]
+    description: ["Developed an inventory management software in C++ with the help of Rational Rose."]
   }];
 
   $scope.baseCertificateUrl = "home/certificates/";
   $scope.skills_certificates = [{
     discipline: "Data Science",
-    tech: ["Machine Learning", "python", "numpy", "pandas", "scikit-learn", "matplotlib", "R", "matlab"],
+    tech: ["Machine Learning", "python", "numpy", "pandas", "scikit-learn", "matplotlib", "R", "MATLAB", "tensorflow", "keras", "caffe"],
     certificates: [{
       certificate: "Coursera_N9DARAZY5X66.pdf",
       description: "Machine Learning by Andrew Ng (Stanford University) on Coursera. November, 2015."
@@ -104,7 +115,7 @@ app.controller('homeCtrl', function ($scope) {
     certificates: []
   }, {
     discipline: "General Computer Science",
-    tech: ["C", "C++", "Java", "python", "Agile Software Development", "Test Driven Development", "Git"],
+    tech: ["C", "C++", "Java", "python", "Agile Software Development", "Test Driven Development", "Git", "Jupyter notebook"],
     certificates: [{
       certificate: "udacity_certificate.pdf",
       description: "Learn key concepts of computer science and build a search engine using python."
