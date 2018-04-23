@@ -17,49 +17,49 @@
 
 <body ng-app="myApp" ng-controller="homeCtrl" id="page-top" class="index">
 
-<!-- Navigation -->
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header page-scroll">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span> Menu</i>
-      </button>
-      <a class="navbar-brand" href="#page-top">Akshit Meghawat</a>
-    </div>
+  <!-- Navigation -->
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> Menu</i>
+        </button>
+        <a class="navbar-brand" href="#page-top">Akshit Meghawat</a>
+      </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="hidden">
-          <a href="#page-top"></a>
-        </li>
-        <li class="page-scroll">
-          <a href="#career">Career</a>
-        </li>
-        <li class="page-scroll">
-          <a href="#education">Education</a>
-        </li>
-        <li class="page-scroll">
-          <a href="#projects">Projects</a>
-        </li>
-        <li class="page-scroll">
-          <a href="#skills">Skills</a>
-        </li>
-        <!-- <li class="page-scroll">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li class="page-scroll">
+            <a href="#career">Career</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#education">Education</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#skills">Skills</a>
+          </li>
+          <!-- <li class="page-scroll">
           <a href="#my-passion">My Passion</a>
         </li> -->
-        <li class="page-scroll">
-          <a href="#contact">Contact</a>
-        </li>
-        <li class="page-scroll">
-          <a href="cv/resume_akshit_meghawat.pdf" target="_blank">CV/Resume</a>
-        </li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
+        <!-- <li class="page-scroll">
+        <a href="#contact">Contact</a>
+      </li> -->
+      <li class="page-scroll">
+        <a href="cv/resume_akshit_meghawat.pdf" target="_blank">CV/Resume</a>
+      </li>
+    </ul>
   </div>
-  <!-- /.container-fluid -->
+  <!-- /.navbar-collapse -->
+</div>
+<!-- /.container-fluid -->
 </nav>
 
 <!-- <div class="row" style="position: relative">
@@ -171,21 +171,21 @@ Hi, I'm<br/>Akshit Meghawat
   </div>
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0"
-         ng-repeat="item in projects">
-      <div class="panel panel-info project-item">
-        <div class="panel-heading">
-          <h3 class="panel-title">{{item.name}}</h3>
-        </div>
-        <div class="panel-body">
-          <h5>{{item.time}}</h5>
-          <span class="label label-primary code" ng-repeat="code in item.tech">{{code}}</span>
-          <ul class="project-description">
-            <li ng-repeat="note in item.description">{{note}}</li>
-          </ul>
-        </div>
+    ng-repeat="item in projects">
+    <div class="panel panel-info project-item">
+      <div class="panel-heading">
+        <h3 class="panel-title">{{item.name}}</h3>
+      </div>
+      <div class="panel-body">
+        <h5>{{item.time}}</h5>
+        <span class="label label-primary code" ng-repeat="code in item.tech">{{code}}</span>
+        <ul class="project-description">
+          <li ng-repeat="note in item.description">{{note}}</li>
+        </ul>
       </div>
     </div>
   </div>
+</div>
 </section>
 
 <section id="skills">
@@ -194,43 +194,43 @@ Hi, I'm<br/>Akshit Meghawat
   </div>
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0"
-         ng-repeat="item in skills_certificates">
-      <div class="panel panel-info project-item">
-        <div class="panel-heading">
-          <h3 class="panel-title">{{item.discipline}}</h3>
-        </div>
-        <div class="panel-body">
-          <span class="label label-primary code" ng-repeat="code in item.tech">{{code}}</span>
-          <ul class="project-description">
-            <li ng-repeat="note in item.certificates">
-              {{note.description}}
-              <a ng-href="{{baseCertificateUrl + note.certificate}}" target="_blank">View Certificate</a>
-            </li>
-          </ul>
-        </div>
+    ng-repeat="item in skills_certificates">
+    <div class="panel panel-info project-item">
+      <div class="panel-heading">
+        <h3 class="panel-title">{{item.discipline}}</h3>
+      </div>
+      <div class="panel-body">
+        <span class="label label-primary code" ng-repeat="code in item.tech">{{code}}</span>
+        <ul class="project-description">
+          <li ng-repeat="note in item.certificates">
+            {{note.description}}
+            <a ng-href="{{baseCertificateUrl + note.certificate}}" target="_blank">View Certificate</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
+</div>
 </section>
 
 <!-- <section id="my-passion">
-  <div class="row">
-    <div class="section-heading">My Passion: Sports, Travelling</div>
-  </div>
-  <div class="row">
-    <div class="who-am-i-items col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-      <div ng-repeat="item in passion" style="margin-top: 10px;"><b>{{item.title}}</b>: {{item.note}}</div>
-    </div>
-  </div>
-  <div class="row">
-    <div id="slider-slick">
-      <div ng-repeat="photo in photos">
-        <img ng-src="{{baseImgUrl + photo.link}}"/>
+<div class="row">
+<div class="section-heading">My Passion: Sports, Travelling</div>
+</div>
+<div class="row">
+<div class="who-am-i-items col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+<div ng-repeat="item in passion" style="margin-top: 10px;"><b>{{item.title}}</b>: {{item.note}}</div>
+</div>
+</div>
+<div class="row">
+<div id="slider-slick">
+<div ng-repeat="photo in photos">
+<img ng-src="{{baseImgUrl + photo.link}}"/>
 
-        <p>{{photo.description}}</p>
-      </div>
-    </div>
-  </div>
+<p>{{photo.description}}</p>
+</div>
+</div>
+</div>
 </section> -->
 
 <!-- <section id="contact">
