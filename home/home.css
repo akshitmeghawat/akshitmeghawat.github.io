@@ -67,6 +67,30 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.intro {
+  margin-top: 100px;
+}
+
+.intro a img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.intro h2 {
+  text-align: center;
+}
+
+.intro h5 {
+  text-align: center;
+}
+
+.profile {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
 .section-heading {
   text-align: center;
   font-family: sans-serif;

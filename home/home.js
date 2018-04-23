@@ -6,8 +6,6 @@ app.controller('homeCtrl', function ($scope) {
     }
   };
 
-  $scope.whoAmI = ["A software developer", "An all-rounded athlete", "An adventurous traveller"];
-
   $scope.baseImgUrl = "home/images/";
 
   $scope.career = [{
