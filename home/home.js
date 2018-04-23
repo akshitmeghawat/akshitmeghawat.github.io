@@ -89,12 +89,14 @@ app.controller('homeCtrl', function ($scope) {
       "Performed logistic regression to predict whether a particular hospital is ideal to visit for a patient having a specific disease.",
       "Developed the system in WAMP using MySQL database."
     ]
-  }, {
-    name: "Object Oriented Analysis & Design",
-    time: "February-April 2013",
-    tech: ["C++", "Rational Rose"],
-    description: ["Developed an inventory management software in C++ with the help of Rational Rose."]
-  }];
+  }
+  // ,{
+  //   name: "Object Oriented Analysis & Design",
+  //   time: "February-April 2013",
+  //   tech: ["C++", "Rational Rose"],
+  //   description: ["Developed an inventory management software in C++ with the help of Rational Rose."]
+  // }
+];
 
   $scope.baseCertificateUrl = "home/certificates/";
   $scope.skills_certificates = [{
