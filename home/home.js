@@ -15,7 +15,7 @@ app.controller('homeCtrl', function ($scope) {
     position: "Junior Digital Analyst",
     location: "Bangalore, India",
     description: [
-      "Developed data-driven analysis & visualization tools for 10+ clients/companies from wide range of industries (insurance, pharmaceutical, shipping, government etc.). (AngularJS, Node.js, Highcharts.js)"
+      "Developed data-driven analysis & visualization tools for 10+ clients/companies from wide range of industries (insurance, pharmaceutical, shipping, government etc.)."
       // "Built an event/initiative tracking software for organizations to systematize data collection and management. It helped in prioritization of resource allocation, scheduling and cost control. Also helped in measuring KPIs for impact assessment and future planning. The software is used by >5 government organizations and >10 NGOs in Africa.",
       // "Handled unstructured data in partnership proposals for a shipping company for better route design and delivery.",
       // "Streamlined the recruitment process for a Cruise Line Agency. Created an interface which enabled recruiters to compare and review multiple applicants’ skills with minimal effort. Reduced recruitment process cycle from 2 weeks to 4 days.",
