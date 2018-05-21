@@ -107,62 +107,62 @@ app.controller('homeCtrl', function ($scope) {
   }
 ];
 
-  $scope.baseCertificateUrl = "home/certificates/";
-  $scope.skills_certificates = [{
-    discipline: "Data Science",
-    tech: ["Machine Learning", "python", "numpy", "pandas", "scikit-learn", "matplotlib", "R", "MATLAB", "tensorflow", "keras", "caffe"],
-    certificates: [{
-      certificate: "Coursera_N9DARAZY5X66.pdf",
-      description: "Machine Learning by Andrew Ng (Stanford University) on Coursera. November, 2015."
-    }, {
-      certificate: "Coursera_ZU9GMJZVGX2W.pdf",
-      description: "R Programming by John Hopkins University on Coursera."
-    }]
+$scope.baseCertificateUrl = "home/certificates/";
+$scope.skills_certificates = [{
+  discipline: "Data Science",
+  tech: ["Machine Learning", "python", "numpy", "pandas", "scikit-learn", "matplotlib", "R", "MATLAB", "tensorflow", "keras", "caffe", "SQL"],
+  certificates: [{
+    certificate: "Coursera_N9DARAZY5X66.pdf",
+    description: "Machine Learning by Andrew Ng (Stanford University) on Coursera. November, 2015."
   }, {
-    discipline: "Web Development",
-    tech: ["AngularJS", "React+Redux", "JavaScript", "Node.js", "HTML", "CSS", "PHP", "SQL", "Highcharts.js", "Lodash.js"],
-    certificates: []
-  }, {
-    discipline: "General Computer Science",
-    tech: ["C", "C++", "Java", "python", "Agile Software Development", "Test Driven Development", "Git", "Jupyter notebook"],
-    certificates: [{
-      certificate: "udacity_certificate.pdf",
-      description: "Learn key concepts of computer science and build a search engine using python."
-    }]
-  }];
+    certificate: "Coursera_ZU9GMJZVGX2W.pdf",
+    description: "R Programming by John Hopkins University on Coursera."
+  }]
+}, {
+  discipline: "Web Development",
+  tech: ["AngularJS", "React+Redux", "JavaScript", "Node.js", "HTML", "CSS", "PHP", "SQL", "Highcharts.js", "Lodash.js", "MySQL"],
+  certificates: []
+}, {
+  discipline: "General Computer Science",
+  tech: ["C", "C++", "Java", "python", "MySQL", "Agile Software Development", "Test Driven Development", "Git", "Jupyter notebook"],
+  certificates: [{
+    certificate: "udacity_certificate.pdf",
+    description: "Learn key concepts of computer science and build a search engine using python."
+  }]
+}];
 
-  $scope.passion = [{
-    title: "An all-rounded athlete",
-    note: "Football, Cricket, Badminton, Table Tennis, Endurance Running, Swimming, Cycling, Basketball, Volleyball, Field Hockey, Handball"
-  }, {
-    title: "An adventurous explorer",
-    note: "Wants to be a globetrotter."
-  }];
+$scope.passion = [{
+  title: "An all-round athlete",
+  note: "Football, Cricket, Badminton, Table Tennis, Endurance Running, Swimming, Cycling, Basketball, Volleyball, Field Hockey, Handball"
+}, {
+  title: "An adventurous explorer",
+  note: "Wants to be a globetrotter."
+}];
 
-  $scope.photos = [{
-    link: "travelling/IMG_20141215_142307.jpg",
-    description: "Frogner Park, Oslo, Norway"
-  }, {
-    link: "travelling/P4040340.JPG",
-    description: "Dead Sea, Jordan"
-  }, {
-    link: "travelling/DSC_0590.JPG",
-    description: "Colline Du Chateau, Nice, France"
-  }, {
-    link: "travelling/DSC_0121.JPG",
-    description: "Musée Rodin, Paris, France"
-  }, {
-    link: "travelling/US_398_us.JPG",
-    description: "Universal Studio, Los Angeles, USA"
-  }, {
-    link: "travelling/US_086_gg.JPG",
-    description: "Golden Gate Bridge, San Francisco, USA"
-  }];
+$scope.photos = [{
+  link: "travelling/IMG_20141215_142307.jpg",
+  description: "Frogner Park, Oslo, Norway"
+}, {
+  link: "travelling/P4040340.JPG",
+  description: "Dead Sea, Jordan"
+}, {
+  link: "travelling/DSC_0590.JPG",
+  description: "Colline Du Chateau, Nice, France"
+}, {
+  link: "travelling/DSC_0121.JPG",
+  description: "Musée Rodin, Paris, France"
+}, {
+  link: "travelling/US_398_us.JPG",
+  description: "Universal Studio, Los Angeles, USA"
+}, {
+  link: "travelling/US_086_gg.JPG",
+  description: "Golden Gate Bridge, San Francisco, USA"
+}];
 
 
-  $(document).ready(function () {
-    $("#slider-slick").slick({
-      dots: true
-    });
-  });
+// $(document).ready(function () {
+//   $("#slider-slick").slick({
+//     dots: true
+//   });
+// });
 });
