@@ -58,15 +58,16 @@ app.controller('homeCtrl', function ($scope) {
     description: [
       "Implemented Convolutional Neural Network and transfer learning on satellite images to estimate economic indicators of nations.",
       "Trained a CNN model on satellite images downloaded from Google Static Map API to predict night-time light intensity of specific countries in Africa",
-      "Also fine-tuned a pre-trained caffe model working on ImageNet dataset to predict poverty (Explored research done by http://sustain.stanford.edu/predicting-poverty)."
+      "https://github.com/akshitmeghawat/csc591-predicting-poverty"
     ]
-    // },{
-    //   name: "Udacity Machine Learning",
-    //   time: "August 2015",
-    //   tech: ["python", "numpy", "pandas", "scikit-learn", "matplotlib"],
-    //   description: [
-    //     "Use machine learning algorithms to identify Enron Employees who may have committed fraud based on the public Enron financial and email dataset.",
-    //   ]
+  },{
+    name: "Udacity Machine Learning",
+    time: "August 2017 - October 2017",
+    tech: ["python", "numpy", "pandas", "scikit-learn"],
+    description: [
+      "Implemented ML algorithms to identify Enron Employees who may have committed fraud based on the public Enron financial and email dataset.",
+      "Trained a Decision Tree Classifier with AdaBoost to identify persons of interest (POIs) with features from financial data and metadata of email dataset."
+    ]
   }, {
     name: "Data Driven Decision Making",
     time: "August - November 2017",
@@ -77,25 +78,33 @@ app.controller('homeCtrl', function ($scope) {
       "Performed calculations on swimming pool data (pH level, chemical cost etc.) and weather data to provide optimal decisions for pool usage and maintenance."
     ]
   }, {
+    name: "Database Design Project",
+    time: "January 2018 - March 2018",
+    tech: ["SQL", "MySQL"],
+    description: [
+      "Developed a database system for a hotel chain to store, manipulate and search check-in information, generate reports.",
+      "Utilized RDBMS concepts of access control, integrity constraints, triggers, stored procedures.",
+      "Created a desktop application with Java, JDBC and MySQL."
+    ]
+  }, {
+    name: "Kaggle: Machine Learning from Disaster",
+    time: "May 2017 - Jun 2017",
+    tech: ["python", "pandas", "scikit-learn", "matplotlib"],
+    description: [
+      "Implemented ML techniques (logistic regression, svm) to predict whether a passenger survived in the tragedy.",
+      "Conducted exploratory analysis to select features with highest predicting power."
+    ]
+  }, {
     name: "Operations Research",
     time: "July-September 2014",
     tech: ["PERT-CPM", "C++"],
     description: ["Implemented PERT-CPM for project management enabling prediction of risk factors and critical path requirements for software product goals."]
   }, {
-    name: "Hospital Management System",
-    time: "July-October 2014",
-    tech: ["WAMP", "MySQL", "PHP", "Javascript", "Machine Learning", "R"],
-    description: [
-      "Performed logistic regression to predict whether a particular hospital is ideal to visit for a patient having a specific disease.",
-      "Developed the system in WAMP using MySQL database."
-    ]
+    name: "Object Oriented Analysis & Design",
+    time: "February-April 2013",
+    tech: ["C++", "Rational Rose"],
+    description: ["Developed an inventory management software in C++ with the help of Rational Rose."]
   }
-  // ,{
-  //   name: "Object Oriented Analysis & Design",
-  //   time: "February-April 2013",
-  //   tech: ["C++", "Rational Rose"],
-  //   description: ["Developed an inventory management software in C++ with the help of Rational Rose."]
-  // }
 ];
 
   $scope.baseCertificateUrl = "home/certificates/";
