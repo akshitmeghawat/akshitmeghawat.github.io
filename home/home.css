@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro a img {
-  width: 100%;
+  height: 45px;
   display: block;
   margin: 0 auto;
 }
@@ -148,6 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 /*project item*/
 .project-item {
   margin-top: 10px;
+  /* height: 455px; */
 }
 
 .code {
