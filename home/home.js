@@ -9,6 +9,13 @@ app.controller('homeCtrl', function ($scope) {
   $scope.baseImgUrl = "home/images/";
 
   $scope.career = [{
+    logoHref: "logos/trusted.png",
+    name: "Trusted Shares & Investments Ltd",
+    time: "Summer 2018",
+    position: "Software Developer, Intern",
+    location: "Mumbai, India",
+    description: ["Implemented SVM, neural networks and naive bayes classifier to predict publicly traded stocks' performance in Indian stock market."]
+  }, {
     logoHref: "logos/McKinsey_&_Company_logo.png",
     name: "McKinsey & Company",
     time: "January 2016 - April 2017",
@@ -31,7 +38,7 @@ app.controller('homeCtrl', function ($scope) {
   }, {
     logoHref: "logos/trusted.png",
     name: "Trusted Shares & Investments Ltd",
-    time: "June - July 2013",
+    time: "Summer 2013",
     position: "Software Developer, Intern",
     location: "Mumbai, India",
     description: ["Developed a suite of software programs in C++ to simulate and optimize the Turtle Trading model by Richard Dennis enabling statistical and heuristic analysis of large amounts of financial data."]
@@ -53,24 +60,27 @@ app.controller('homeCtrl', function ($scope) {
 
   $scope.projects = [{
     name: "Spatial and Temporal Data Mining",
-    time: "January - April 2018",
-    tech: ["python", "tensorflow", "keras", "caffe", "R"],
+    time: "Spring 2018",
+    tech: ["python", "tensorflow", "keras", "R"],
     description: [
-      "Implemented Convolutional Neural Network and transfer learning on satellite images to estimate economic indicators of nations.",
-      "Trained a CNN model on satellite images downloaded from Google Static Map API to predict night-time light intensity of specific countries in Africa",
-      "https://github.com/akshitmeghawat/csc591-predicting-poverty"
+      "Implemented convolutional neural network (architecture inspired from VGG-16) with transfer learning to classify countries in Africa into 3 different economic classes.",
+      "Used CNN models to extract features from daytime satellite images (Google Static Maps API) to predict economic activity.",
+      "Due to lack of labelled data, nighttime light intensity was used as a proxy for economic factors, allowing us to scale without labelled data.",
+      "Reproduced research done by sustain.stanford.edu/predicting-poverty"
+      // "https://github.com/akshitmeghawat/csc591-predicting-poverty"
     ]
   },{
-    name: "Udacity Machine Learning",
-    time: "August 2017 - October 2017",
-    tech: ["python", "numpy", "pandas", "scikit-learn"],
+    name: "Database Design Project",
+    time: "Spring 2018",
+    tech: ["SQL", "MySQL", "Java", "JDBC"],
     description: [
-      "Implemented ML algorithms to identify Enron Employees who may have committed fraud based on the public Enron financial and email dataset.",
-      "Trained a Decision Tree Classifier with AdaBoost to identify persons of interest (POIs) with features from financial data and metadata of email dataset."
+      "Designed and developed a database system for a hotel chain to maintain check-in and staff information.",
+      "Utilized RDBMS concepts of stored procedures, integrity constraints and triggers to generate reports, manipulate and search check-in information.",
+      "Implemented grants and privileges to facilitate role-based access control."
     ]
   }, {
     name: "Data Driven Decision Making",
-    time: "August - November 2017",
+    time: "Fall 2017",
     tech: ["python", "nltk"],
     description: [
       "Built an application (assistant) for swimming pool owners for hassle-free pool usage and maintenance.",
@@ -78,17 +88,24 @@ app.controller('homeCtrl', function ($scope) {
       "Performed calculations on swimming pool data (pH level, chemical cost etc.) and weather data to provide optimal decisions for pool usage and maintenance."
     ]
   }, {
-    name: "Database Design Project",
-    time: "January 2018 - March 2018",
-    tech: ["SQL", "MySQL"],
+    name: "Asymptotic Analysis of Algorithms",
+    time: "Spring 2018",
+    tech: ["C++"],
     description: [
-      "Developed a database system for a hotel chain to store, manipulate and search check-in information, generate reports.",
-      "Utilized RDBMS concepts of access control, integrity constraints, triggers, stored procedures.",
-      "Created a desktop application with Java, JDBC and MySQL."
+      "Performed large scale computational experiments in C++ with multiple sorting algorithms(utility, merge, heap etc) to analyze asymptotic constants for runtime and key-comparisons.",
+      "Conducted the experiments with varying input sizes (~100k to 12.8M) and different input shapes (random, organ pipe, sawtooth)"
+    ]
+  }, {
+    name: "Udacity Machine Learning",
+    time: "Fall 2017",
+    tech: ["python", "numpy", "pandas", "scikit-learn"],
+    description: [
+      "Implemented Decision Tree Classifier with AdaBoost to identify Enron fraud suspects with public Enron financial and email dataset (http://www.cs.cmu.edu/~./enron/).",
+      "Obtained validation F1 score of 0.6"
     ]
   }, {
     name: "Kaggle: Machine Learning from Disaster",
-    time: "May 2017 - Jun 2017",
+    time: "Summer 2017",
     tech: ["python", "pandas", "scikit-learn", "matplotlib"],
     description: [
       "Implemented ML techniques (logistic regression, svm) to predict whether a passenger survived in the tragedy.",
@@ -96,7 +113,7 @@ app.controller('homeCtrl', function ($scope) {
     ]
   }, {
     name: "Operations Research",
-    time: "July-September 2014",
+    time: "Fall 2014",
     tech: ["PERT-CPM", "C++"],
     description: ["Implemented PERT-CPM for project management enabling prediction of risk factors and critical path requirements for software product goals."]
   }, {
@@ -110,7 +127,7 @@ app.controller('homeCtrl', function ($scope) {
 $scope.baseCertificateUrl = "home/certificates/";
 $scope.skills_certificates = [{
   discipline: "Data Science",
-  tech: ["Machine Learning", "python", "numpy", "pandas", "scikit-learn", "matplotlib", "R", "MATLAB", "tensorflow", "keras", "caffe", "SQL"],
+  tech: ["Machine Learning", "python", "numpy", "pandas", "scikit-learn", "matplotlib", "R", "MATLAB", "tensorflow", "keras", "SQL", "MongoDB"],
   certificates: [{
     certificate: "Coursera_N9DARAZY5X66.pdf",
     description: "Machine Learning by Andrew Ng (Stanford University) on Coursera. November, 2015."
@@ -120,11 +137,11 @@ $scope.skills_certificates = [{
   }]
 }, {
   discipline: "Web Development",
-  tech: ["AngularJS", "React+Redux", "JavaScript", "Node.js", "HTML", "CSS", "PHP", "SQL", "Highcharts.js", "Lodash.js", "MySQL"],
+  tech: ["AngularJS", "React+Redux", "JavaScript", "Node.js", "HTML", "CSS", "PHP", "SQL", "Highcharts.js", "Lodash.js", "MySQL", "MongoDB", "PyMongo", "Bottle (python)"],
   certificates: []
 }, {
   discipline: "General Computer Science",
-  tech: ["C", "C++", "Java", "python", "MySQL", "Agile Software Development", "Test Driven Development", "Git", "Jupyter notebook"],
+  tech: ["C", "C++", "Java", "python", "MySQL", "MongoDB", "Agile Software Development", "Test Driven Development", "GitHub", "Jupyter notebook"],
   certificates: [{
     certificate: "udacity_certificate.pdf",
     description: "Learn key concepts of computer science and build a search engine using python."
