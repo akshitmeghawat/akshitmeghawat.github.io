@@ -60,74 +60,83 @@ app.controller('homeCtrl', function ($scope) {
 
   $scope.projects = [{
     name: "Spatial and Temporal Data Mining",
+    link: "https://github.com/akshitmeghawat/csc591-predicting-poverty",
     time: "Spring 2018",
     tech: ["python", "tensorflow", "keras", "R"],
     description: [
       "Implemented convolutional neural network (architecture inspired from VGG-16) with transfer learning to classify countries in Africa into 3 different economic classes.",
-      "Used CNN models to extract features from daytime satellite images (Google Static Maps API) to predict economic activity.",
-      "Due to lack of labelled data, nighttime light intensity was used as a proxy for economic factors, allowing us to scale without labelled data.",
-      "Reproduced research done by sustain.stanford.edu/predicting-poverty"
+      // "Used CNN models to extract features from daytime satellite images (Google Static Maps API) to predict economic activity.",
+      // "Due to lack of labelled data, nighttime light intensity was used as a proxy for economic factors, allowing us to scale without labelled data.",
+      // "Reproduced research done by sustain.stanford.edu/predicting-poverty"
       // "https://github.com/akshitmeghawat/csc591-predicting-poverty"
     ]
-  },{
-    name: "Database Design Project",
-    time: "Spring 2018",
-    tech: ["SQL", "MySQL", "Java", "JDBC"],
-    description: [
-      "Designed and developed a database system for a hotel chain to maintain check-in and staff information.",
-      "Utilized RDBMS concepts of stored procedures, integrity constraints and triggers to generate reports, manipulate and search check-in information.",
-      "Implemented grants and privileges to facilitate role-based access control."
-    ]
-  }, {
-    name: "Data Driven Decision Making",
+  },
+  // {
+  //   name: "Database Design Project",
+  //   time: "Spring 2018",
+  //   tech: ["SQL", "MySQL", "Java", "JDBC"],
+  //   description: [
+  //     "Designed and developed a database system for a hotel chain to maintain check-in and staff information.",
+  //     "Utilized RDBMS concepts of stored procedures, integrity constraints and triggers to generate reports, manipulate and search check-in information.",
+  //     "Implemented grants and privileges to facilitate role-based access control."
+  //   ]
+  // },
+  // {
+  //   name: "Data Driven Decision Making",
+  //   time: "Fall 2017",
+  //   tech: ["python", "nltk"],
+  //   description: [
+  //     "Built an application (assistant) for swimming pool owners for hassle-free pool usage and maintenance.",
+  //     "Collected data from LexisNexis universal database and online surveys. Performed text analysis (word tokenization, frequency analysis, stopwords removal etc.) on the data to identify key areas of improvement and the most important concerns/complaints for swimming pool owners.",
+  //     "Performed calculations on swimming pool data (pH level, chemical cost etc.) and weather data to provide optimal decisions for pool usage and maintenance."
+  //   ]
+  // },
+  // {
+  //   name: "Asymptotic Analysis of Algorithms",
+  //   time: "Spring 2018",
+  //   tech: ["C++"],
+  //   description: [
+  //     "Performed large scale computational experiments in C++ with multiple sorting algorithms(utility, merge, heap etc) to analyze asymptotic constants for runtime and key-comparisons.",
+  //     "Conducted the experiments with varying input sizes (~100k to 12.8M) and different input shapes (random, organ pipe, sawtooth)"
+  //   ]
+  // },
+  {
+    name: "Machine Learning: Enron Fraud Detection",
+    link: "https://github.com/akshitmeghawat/enron-fraud-detection",
     time: "Fall 2017",
-    tech: ["python", "nltk"],
+    tech: ["python", "numpy"],
     description: [
-      "Built an application (assistant) for swimming pool owners for hassle-free pool usage and maintenance.",
-      "Collected data from LexisNexis universal database and online surveys. Performed text analysis (word tokenization, frequency analysis, stopwords removal etc.) on the data to identify key areas of improvement and the most important concerns/complaints for swimming pool owners.",
-      "Performed calculations on swimming pool data (pH level, chemical cost etc.) and weather data to provide optimal decisions for pool usage and maintenance."
+      "Implemented Decision Tree Classifier with AdaBoost from scratch to identify Enron fraud suspects with public Enron financial and email dataset (http://www.cs.cmu.edu/~./enron/).",
+      // "Obtained validation F1 score of 0.6",
     ]
-  }, {
-    name: "Asymptotic Analysis of Algorithms",
-    time: "Spring 2018",
-    tech: ["C++"],
-    description: [
-      "Performed large scale computational experiments in C++ with multiple sorting algorithms(utility, merge, heap etc) to analyze asymptotic constants for runtime and key-comparisons.",
-      "Conducted the experiments with varying input sizes (~100k to 12.8M) and different input shapes (random, organ pipe, sawtooth)"
-    ]
-  }, {
-    name: "Udacity Machine Learning",
-    time: "Fall 2017",
-    tech: ["python", "numpy", "pandas", "scikit-learn"],
-    description: [
-      "Implemented Decision Tree Classifier with AdaBoost to identify Enron fraud suspects with public Enron financial and email dataset (http://www.cs.cmu.edu/~./enron/).",
-      "Obtained validation F1 score of 0.6"
-    ]
-  }, {
-    name: "Kaggle: Machine Learning from Disaster",
-    time: "Summer 2017",
-    tech: ["python", "pandas", "scikit-learn", "matplotlib"],
-    description: [
-      "Implemented ML techniques (logistic regression, svm) to predict whether a passenger survived in the tragedy.",
-      "Conducted exploratory analysis to select features with highest predicting power."
-    ]
-  }, {
-    name: "Operations Research",
-    time: "Fall 2014",
-    tech: ["PERT-CPM", "C++"],
-    description: ["Implemented PERT-CPM for project management enabling prediction of risk factors and critical path requirements for software product goals."]
-  }, {
-    name: "Object Oriented Analysis & Design",
-    time: "February-April 2013",
-    tech: ["C++", "Rational Rose"],
-    description: ["Developed an inventory management software in C++ with the help of Rational Rose."]
-  }
+  },
+  // {
+  //   name: "Kaggle: Machine Learning from Disaster",
+  //   time: "Summer 2017",
+  //   tech: ["python", "pandas", "scikit-learn", "matplotlib"],
+  //   description: [
+  //     "Implemented ML techniques (logistic regression, svm) to predict whether a passenger survived in the tragedy.",
+  //     "Conducted exploratory analysis to select features with highest predicting power."
+  //   ]
+  // },
+  // {
+  //   name: "Operations Research",
+  //   time: "Fall 2014",
+  //   tech: ["PERT-CPM", "C++"],
+  //   description: ["Implemented PERT-CPM for project management enabling prediction of risk factors and critical path requirements for software product goals."]
+  // },
+  // {
+  //   name: "Object Oriented Analysis & Design",
+  //   time: "February-April 2013",
+  //   tech: ["C++", "Rational Rose"],
+  //   description: ["Developed an inventory management software in C++ with the help of Rational Rose."]
+  // }
 ];
 
 $scope.baseCertificateUrl = "home/certificates/";
 $scope.skills_certificates = [{
   discipline: "Data Science",
-  tech: ["Machine Learning", "python", "numpy", "pandas", "scikit-learn", "matplotlib", "R", "MATLAB", "tensorflow", "keras", "SQL", "MongoDB"],
+  tech: ["Machine Learning", "python", "numpy", "pandas", "scikit-learn", "matplotlib", "R", "MATLAB", "tensorflow", "keras", "xgboost", "SQL", "MongoDB", "Hadoop", "Spark"],
   certificates: [{
     certificate: "Coursera_N9DARAZY5X66.pdf",
     description: "Machine Learning by Andrew Ng (Stanford University) on Coursera. November, 2015."
