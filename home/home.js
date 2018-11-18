@@ -47,7 +47,7 @@ app.controller('homeCtrl', function ($scope) {
   $scope.education = [{
     logoHref: "logos/ncsulogo.png",
     name: "North Carolina State University",
-    time: "August 2017 - present",
+    time: "August 2017 - May 2019",
     location: "Raleigh, NC, USA",
     position: "Master of Computer Science: Data Science track"
   }, {
