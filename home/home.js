@@ -9,13 +9,6 @@ app.controller('homeCtrl', function ($scope) {
   $scope.baseImgUrl = "home/images/";
 
   $scope.career = [{
-    logoHref: "logos/trusted.png",
-    name: "Trusted Shares & Investments Ltd",
-    time: "Summer 2018",
-    position: "Software Developer, Intern",
-    location: "Mumbai, India",
-    description: ["Implemented SVM, neural networks and naive bayes classifier to predict publicly traded stocks' performance in Indian stock market."]
-  }, {
     logoHref: "logos/McKinsey_&_Company_logo.png",
     name: "McKinsey & Company",
     time: "January 2016 - April 2017",
